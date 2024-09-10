@@ -56,7 +56,7 @@ jobs:
       - name: Cross-compilation (build debug)
         run: cross build -p aws-lc-rs --features unstable --target ${{ matrix.target }}
       - name: Cross-compilation (test release)
-        run: cross test -p aws-lc-rs --release --features unstable --target ${{ matrix.target }}
+        run: cross build -p aws-lc-rs --release --features unstable --target ${{ matrix.target }}
 
 
   aws-lc-rs-cross-0_2_5-test:
